@@ -1,0 +1,109 @@
+<!--Anatomia do Grid
+
+    Grid Container: O "pai" de tudo. É onde você define que o layout será grid.
+
+    Grid Item: Os "filhos" diretos. Cada elemento que mora dentro do container.
+
+    Grid Track: O caminho (trilha). É o espaço entre duas linhas, seja uma linha inteira ou uma coluna inteira.
+
+    Grid Line: As divisórias. Você as usa para dizer onde um item começa e onde termina.
+
+        Dica: A primeira linha é a 1, a última é a -1.
+
+    Grid Cell: O "quadradinho" individual (o encontro de uma linha com uma coluna).
+
+    Grid Area: Um conjunto de células que formam um retângulo maior.
+
+    Grid Gap (ou Gutters): O respiro. O espaço entre as colunas e linhas.
+
+Propriedades Principais
+No Container (O Pai)
+
+    display: grid; — Ativa a "mágica".
+
+    grid-template-columns — Define a largura e a quantidade de colunas.
+
+    grid-template-rows — Define a altura e a quantidade de linhas.
+
+    gap (antigo grid-gap) — Atalho para definir o espaçamento entre tudo.
+
+Exemplos
+
+/* 3 colunas iguais */
+grid-template-columns: 1fr 1fr 1fr; 
+
+/* 2 colunas: a primeira fixa e a segunda ocupa o resto */
+grid-template-columns: 200px 1fr; 
+
+/* Atalho para 4 colunas de 100px */
+grid-template-columns: repeat(4, 100px);
+
+Próximos
+
+align-items (vertical)
+justify-items (horizontal)
+align-content (vertical)
+justify-content (horizontal)
+
+Essas quatro propriedades controlam como os itens se comportam dentro do espaço que sobrou. A regra de ouro para não confundir é:
+
+    Items: Alinha o conteúdo dentro de cada célula.
+
+    Content: Alinha a grade inteira dentro do container (útil quando o grid é menor que o container pai).
+
+1. Justify-Items (Eixo Horizontal / Linha)
+
+Define como os itens se alinham horizontalmente dentro de suas respectivas áreas/células.
+
+    stretch (padrão): O item estica para ocupar toda a largura da célula.
+
+    start: Alinha o item ao início da célula (esquerda).
+
+    end: Alinha o item ao final da célula (direita).
+
+    center: Centraliza o item horizontalmente.
+
+2. Align-Items (Eixo Vertical / Coluna)
+
+Define como os itens se alinham verticalmente dentro de suas células.
+
+    stretch (padrão): O item estica para ocupar toda a altura da célula.
+
+    start: Alinha o item ao topo da célula.
+
+    end: Alinha o item à base da célula.
+
+    center: Centraliza o item verticalmente.
+
+3. Justify-Content (O Grid todo - Horizontal)
+
+Às vezes, a soma das suas colunas (ex: repeat(3, 100px)) é menor que o tamanho total do container. Essa propriedade move o "bloco" do grid horizontalmente.
+
+    start: Grid colado na esquerda.
+
+    end: Grid colado na direita.
+
+    center: Grid no meio do container.
+
+    stretch: Redimensiona os itens para o grid preencher o container (só funciona se as larguras forem auto/flexíveis).
+
+    space-around: Espaço igual entre os itens, e metade desse espaço nas bordas.
+
+    space-between: Primeiro item no início, último no fim, espaço distribuído apenas entre eles.
+
+    space-evenly: Espaço rigorosamente igual entre tudo, inclusive as bordas.
+
+4. Align-Content (O Grid todo - Vertical)
+
+Mesma lógica do anterior, mas para quando a altura total das suas linhas é menor que a altura do container.
+
+    start: Grid no topo.
+
+    end: Grid no fundo.
+
+    center: Grid centralizado verticalmente.
+
+    stretch: As linhas esticam para ocupar a altura total.
+
+    space-around / space-between / space-evenly: Mesma distribuição de espaço explicada acima, mas na vertical.
+-->

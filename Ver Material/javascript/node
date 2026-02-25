@@ -1,0 +1,7 @@
+Como abrir e testar
+
+    No terminal: Digite node e dê Enter. Para sair, aperte Ctrl + C duas vezes.
+
+    Ver versão: node -v e npm -v.
+
+    Executar um arquivo: Se você criou um arquivo aula1.js, digite: node aula1.js

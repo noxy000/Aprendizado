@@ -1,0 +1,19 @@
+para criar variáveis pode usar o var, let e const
+
+> var s = 'JavaScript'
+undefined
+> 'Eu estou estudando ' + s
+'Eu estou estudando JavaScript'
+> nome = 'Gustavo'
+'Gustavo'
+> idade = 41
+41
+> nota = 5.5
+5.5
+> 'O aluno ' + nome + ' de ' + idade + ' anos tirou a nota ' + nota
+'O aluno Gustavo de 41 anos tirou a nota 5.5'
+
+tem uma forma melhor de fazer isso usando template string com as crases e placeholder `${s}`
+
+`O aluno ${nome} com ${idade} anos tirou a nota ${nota}`
+'O aluno Gustavo com 41 anos tirou a nota 5.5'

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box</title>
+    <style>
+
+        div.conteiner {
+            background-color: lightsalmon;
+
+            display: flex;
+        }
+
+        div.item {
+            background-color: lightblue;
+            border: 1px solid black;
+            text-align: center;
+            flex: auto;
+        }
+
+    </style>
+</head>
+<body>
+   <div class="conteiner">
+    <div class="item">A</div>
+    <div class="item">B</div>
+    <div class="item">C</div>
+    <div class="item">D</div>
+    <div class="item">E</div>
+    <div class="item">F</div>
+    <div class="item">G</div>
+   </div>
+</body>
+</html>
+
+<!--flex direction (configurações): 
+
+flex-direction: row; (padrão, linha) e row-reverse (os itens vão ser colocados da direita pra esquerda)
+flex-direction; column; (em pé com itens de cima pra baixo) column-reverse; (para colocar os itens de baixo pra cima)
+-->
+
+<!-- Eixos
+
+
+
+
+main-axis tem o ponto inicial e final, o main-start e main-end também é criado o cross-axis que tem o cross-start e cross-end no row-reverse os sentidos horizontais se revertem também | já no colum o main axis vai de cima pra baixo e o cross vai da esquerda pra direita, vai inverter da mesma forma no column-reverse -->

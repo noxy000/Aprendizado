@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            /*|  Medidas absolutas
+            cm, mm, in(polegada), px, pt(ponto), pc(paica).
+
+            Medidas relativas
+            em(rel. ao tamanho atual da fonte), ex(rel. a altura x de uma fonte), rem(rel. ao "root" que está configurada no body), vw(largura da viewport), vh(largura da viewport), %(pode usar porcentagem).
+            A W3C recomenda mais o uso de px e em para tamanho de font-size.
+            geralmente 16px = 1em  |*/
+            font-size: 16px;
+            font-weight: normal;
+            /*(lighter, normal, bold, bolder) ou vai de 100 - 900 */
+            font-style: italic;
+            text-decoration: underline;
+        }  
+        h1, h2 {
+            font-family: serif;
+        }
+        h1 {
+            /* shorthand font 
+            (font-style -> font-weight -> font-size -> font-family)
+
+            font-style: italic;
+            font-weight: bolder;
+            font-size: 3em;
+            font-family: sans-serif; 
+            */
+            font: italic bolder 3em sans-serif;
+        }
+        h2 {
+            font: bold 2em serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com fontes</h1>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis earum dolor laudantium eveniet, voluptates ipsam saepe totam, vero eaque similique ducimus at. Tempore illum sit nisi! Maxime eaque eveniet error? Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi consequatur voluptate nulla dolores placeat itaque voluptates eos aperiam! Quae placeat ipsum temporibus mollitia nemo optio totam unde dolor rerum animi.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, mollitia molestiae quidem impedit facere suscipit deleniti incidunt fugiat rerum praesentium ipsa harum quia magnam vel dolor est delectus culpa omnis.</p>
+    <h2>Subtítulo do exercício</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque atque molestias vel delectus nobis autem ducimus impedit rem. Odit enim maiores quam molestias saepe fuga maxime dolorem iste, sunt commodi.</p>
+</body>
+</html>

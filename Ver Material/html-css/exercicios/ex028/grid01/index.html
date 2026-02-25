@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout na Prática</title>
+    <style>
+        div.conteiner {
+            border: 3px solid blue;
+            height: 250px;
+            display: grid;
+            grid-template-columns: auto auto auto;
+            grid-template-rows: auto auto auto;
+            gap: 10px;
+            align-items: normal; /*ou stretch*/
+            justify-items: normal; /*ou stretch*/
+            align-content: normal; /*ou stretch*/
+            justify-content: normal; /*ou stretch*/
+        }
+
+        div.item {
+            border: 3px solid red;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="conteiner">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+    </div>
+</body>
+</html>
+<!--
+grid-template-rows: os items já aparecem na linha com um tamanho determinado
+grid-template-columns: mesma coisa que o de cima só que em coluna
+place-items: configura o align items e justify items 
+place-content: configura align-content e justify content
+grid-template configura grid-template-rows e grid-template-columns
+digamos que tava assim:
+grid-template-rows: 100px 100px 100px
+grid-tmeplate-columns: auto auto auto
+vira:
+grid-template: 100px 100px 100px / auto auto auto
+função repeat()
+grid-template-rows: 100px 100px 100px; = grid-template-rows: repeat(3, 100px);
+grid-template-columns: auto auto auto; = grid-template-columns: repeat(3, auto);
+e ainda dá pra simplicar as duas linhas acima dessa forma:
+grid-template: repeat(3, 100px) / repeat(3, auto); no lugar de auto é melhor usar a fração (fr) é possível misturar medidas de % de px de fr e etc...
+unidade fraction
+
+-->

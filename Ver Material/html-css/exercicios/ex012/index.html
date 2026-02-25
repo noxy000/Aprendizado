@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Vídeos com HTML5</title>
+</head>
+<body>
+<h1>Inserindo vídeos hospedados localmente</h1>
+<p>Este vídeo esta hospedado no meu próprio computador</p>
+<video src="midia/v.webm" width="400" controls autoplay loop></video>
+<video width="400" poster="imagens/i.jpeg" controls>
+	<source src="midia/v.ogv" type="video/ogg">
+	<source src="midia/v.webm" type="video/webm">
+	<source src="midia/v.mp4" type="video/mp4">
+	<source src="midia/v.m4v" type="video/mp4">
+<p>Sinto muito, seu navegador não tem compatibilidade com reprodução de vídeos. :(</p>
+</video>
+<p>O problema de colocar vídeos dessa forma em vários formatos pra ter compatibilidade é que tem um alto uso de banda de internet e pode pesar um pouco, então existe uma segunda opção mais interessante que é adicionando vídeos de serviços de hospedagem de vídeos, como o youtube por exemplo</p>
+<h1>Inserindo vídeos do YouTube</h1>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/OzUnqQk4eOg?" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<h1>Inserindo vídeos do vimeo</h1>
+<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1150530803?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Street Race"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+</body>
+</html>

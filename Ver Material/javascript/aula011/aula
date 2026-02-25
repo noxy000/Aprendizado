@@ -1,0 +1,24 @@
+Condições
+
+    if = se
+    else = se não
+
+    if (Condição) {
+        true
+    } else {
+        false
+    }
+
+Tipos de Condições
+
+    if (condição) { // Condição simples
+        true
+    }
+
+    e
+
+    if (condição) { // Condição composta
+        true
+    } else {
+        false
+    }

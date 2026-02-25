@@ -1,0 +1,15 @@
+github.com/gustavoguanabara
+gustavoguanabara.github.io
+
+referências
+mdn - mozilla developer network
+
+
+referência original - word wide web consortium
+
+mais sobre html - um grupo de estudos pra evolução da linguagem
+Web hypertext application technology working group
+
+por ultimo
+w3schools - (refsness data)
+

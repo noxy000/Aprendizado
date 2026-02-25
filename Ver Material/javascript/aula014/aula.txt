@@ -1,0 +1,18 @@
+for (inicio ; teste ; incr) {
+    bloco
+}
+
+se o teste for verdadeiro ele vai executar o bloco e depois vai subir enquanto faz o incremento
+
+
+var c = 1
+while (c <= 10) {
+    Bloco
+    c ++
+}
+
+fica assim:
+
+for (var c = 1 ; c <=10 ; c++) {
+    Bloco
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pr-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-query.css">
+</head> 
+<body>
+    <main>
+        <section id="login">
+            <div id="imagem">
+                <!-- Aqui vai a imagem nas CSS -->
+            </div>
+            <div id="formulario">
+                <h1>Login</h1>
+                <p>Seja bem vindo(a) novamente. Faça login para acessar sua conta e fazer as configurações no seu ambiente.</p>
+                <form action="login.php" method="post">
+                    <div class="campo">
+                        <span class="material-symbols-outlined">Person</span>
+                        <input type="email" name="login" id="ilogin" placeholder="seu e-mail" autocomplete="email" required maxlength="30">
+                        <label for="ilogin">E-mail</label>
+                    </div>
+                    <div class="campo">
+                        <span class="material-symbols-outlined">Vpn_Key</span>
+                        <input type="password" name="senha" id="isenha" placeholder="sua senha" autocomplete="current-password" required minlength="8" maxlength="20">
+                        <label for="isenha">Senha</label>
+                    </div>
+                    <input type="submit" value="Entrar">
+                    <a href="esqueci.html" class="botao">
+                        Esqueci a senha <span class="material-symbols-outlined">mail</span>
+                    </a>
+                </form>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

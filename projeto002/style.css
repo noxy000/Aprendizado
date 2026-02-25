@@ -1,0 +1,104 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+    --cor1: #F07A02;
+    --cor2: #F0B902;
+    --cor3: #F09B02;
+    --cor4: #F0D602;
+    --corfundo: #F2E0D8;
+    --corfundo2: #F7EEDC;
+    --font: 'Fascinate Inline';
+}
+
+header {
+    background-color: var(--cor3);
+    padding: 0px 20px;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.5);
+}
+
+header h1 {
+    font-family: var(--font);
+    font-size: 3em;
+    text-align: center;
+    padding-top: 15px;
+}
+
+header p {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+header ul {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    transition: 2s;
+}
+header li {
+    list-style: none;
+    font-weight: bold;
+    padding: 10px;
+}
+
+header li:hover {
+    background-color: var(--cor1);
+    transition: 0.5s;
+}
+
+section#cadastro {
+    display: none;
+    background-color: var(--corfundo);
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    border: 3px solid var(--cor3);
+    outline: 3px solid black;
+}
+
+section#cadastro h2 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+section#cadastro input {
+    margin: 10px;
+    width: 70%;
+    border-radius: 8px;
+    padding: 5px;
+    outline-color: var(--cor1);
+}
+
+section#produtos {
+    display: flex;
+    flex-flow: row wrap;   
+    background-color: var(--corfundo2);
+    padding: 20px;
+    gap: 10px;
+    justify-content: center;
+}
+
+section#produtos input {
+  border-radius: 4px;
+  border: 2px solid black;
+  padding: 10px;
+}
+
+/* Aqui eu só ajustei a seleção para a classe .produto que o JS vai criar */
+.produto {
+    background-color: white;
+    padding: 30px;
+    flex: 0 1 48%;
+    border-radius: 5px; /* Um bônus pra combinar com o resto */
+    border: 1px solid #ddd;
+}
+
+footer p {
+  text-align: center;
+  padding: 10px;
+}

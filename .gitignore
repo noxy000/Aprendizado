@@ -1,0 +1,15 @@
+.DS_Store
+.directory
+.Trash-*
+*~
+
+.vscode/
+*.code-workspace
+.history/
+
+node_modules/
+vendor/
+*.log
+.phpunit.result.cache
+
+.env

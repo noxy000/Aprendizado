@@ -1,0 +1,13 @@
+PHP documendation - Tem em pt-br https://www.php.net/
+
+Livro - Aprendendo PHP
+
+Livro - PHP Moderno
+
+Livro - O'reilly Programing PHP
+
+Livro - Learn PHP 8 Steve Prettyman
+
+Livro - PHP 8 Quick Scripting Reference
+
+Livro - PHP&MYSQL Jonh Duckett

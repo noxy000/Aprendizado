@@ -1,0 +1,35 @@
+super tag <?php ?>
+short open tag <? ?>
+ASP tag <% %>
+short tag php <?= ?>
+
+Ordem de prescedência
+
+( )
+**
+* / %
++ -
+
+abs() retorna o valor absoluto de número, valor absoluto é sem o sinal, tipo -2000 sendo apenas 2000
+
+base_convert(1011, 2, 16) pra converter bases
+
+ceil(),floor(),round() funções de arredondamento, ceil arredonda pra cima, floor pra baixo e round normal aritmético
+
+hypot() pra calcular a hipotenusa, diz o tamanho dos dois catetos e ela calcula a hipotenusa
+
+intdiv(5, 2) divisão inteira, resposta 2, porque 2*2 = 4, dai 5 - 4 = 1 dai não dá pra dividir e para por ai
+
+min(5, 2) mostra valor mínimo, valor mínimo entre 5 e 2 é o 2 (obs: dá pra colocar quanto números quiser)
+
+max(5, 2) mostra valor máximo, valor máximo entre 5 e 2 é o 5
+
+pi() vai dar o valor de pi, ou se não quiser, então dá pra usar uma constante $p = M_PI, dá exatamente o mesmo valor as duas
+
+pow(5, 2) função de potência, 5² = 25
+
+sin(),cos(),tan() frubnções trigonométricas
+
+sqrt(81) vai calcular raiz quadrada de um número, raiz quadrada de 81 = 9
+
+pode fazer desse jeito também 81 ** (1/2) = 9 ou 27 ** (1/3) = 3

@@ -1,0 +1,25 @@
+while : enquanto
+
+
+while (condição) {
+    vai acontecer enquanto a condição for verdadeira
+}
+
+function comerPizza() {
+    comerFatia()
+    comerFatia()
+    comerFatia()
+    comerFatia()
+    comerFatia()
+    comerFatia()
+    comerFatia()
+    comerFatia()
+}
+
+melhorando com while:
+
+function comerPizza() {
+    while(temFatia) {
+        comerFatia()
+    }
+}

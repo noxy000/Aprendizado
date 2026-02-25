@@ -1,0 +1,16 @@
+@charset "UTF-8"
+body {
+	background-color: lightcoral;
+	font-family: Arial, VT323;
+	font-size: 20px;
+}
+h1 {
+	color: darkblue;
+	background-color: lightblue;
+}
+h2 {
+	color: darkred;
+}
+p {
+	text-align: justify;
+}

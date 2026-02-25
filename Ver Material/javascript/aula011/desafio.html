@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pais</title>
+</head>
+<body>
+    <h1>Identificador</h1>
+    
+    <input type="text" name="ide" id="ide">
+    <input type="button" value="Verificar" onclick="verificar()">
+    <p></p>
+
+    <script>
+        function verificar() {
+            var txtp = window.document.getElementById('ide')
+            var p = window.document.querySelector('p')
+            var pais = txtp.value
+            if (pais == 'Brasil') {
+                p.innerText = 'Você é Brasileiro(a)!'
+            } else {
+                p.innerText = 'Você é Estrangeiro(a)!'
+            }
+        }
+    </script>
+</body>
+</html>

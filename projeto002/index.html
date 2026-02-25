@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Fascinate+Inline&display=swap');
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Shop</h1>
+        <p>Cadastre seu produto aqui e amplie suas vendas!</p>
+        <ul>
+            <li onclick="telaDeCadastro()">Cadastrar</li>
+            <li onclick="telaDeProdutos()">Produtos</li>
+        </ul>
+    </header>
+    <main>
+        <section id="cadastro">
+            <div class="caixa">
+                <h2>Cadastre seu produto</h2>
+                <label for="nome">Nome do produto</label><br>
+                <input type="text" name="nome" id="nome" maxlength=20"><br>
+                <label for="marca">Preço</label><br>
+                <input type="number" name="txtn" id="txtn"><br>
+                <input type="button" value="Cadastrar" onclick="cadastrar()">
+            </div>
+        </section>
+        <section id="produtos">
+          <input type="text" id="pesquisando" placeholder="Pesquisar" oninput="pesquisar()">
+                <div class="produto">
+                    Produto Modelo
+                </div>
+                <div class="produto">
+                    Produto Modelo
+                </div>
+          
+          <p id="mensagemVazio" style="display: none; color: red; text-align: center; width: 100%;">
+    Nenhum produto encontrado.
+          </p>
+
+        </section>
+    </main>
+    <footer>
+        <p>Site Desenvolvido por <strong>Hyper</strong></p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
+
+<!-- Apenas pra celular por enquanto -->

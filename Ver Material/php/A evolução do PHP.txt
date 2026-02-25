@@ -1,0 +1,39 @@
+Surgimento 1994 por Rasmus Lerdorf
+
+Eles fez porque ele queria contar quantos visitantes acessavam o site dele
+
+então ele criou um "Personal Home Page" (PHP) utilizando a linguagem C
+
+começou como uma ferramenta simples que só foi ter sua primeira versão 1.0 em 1995 PHP tools
+
+versão 2.0 PHP/FI (Form Interpreter) 1996 e ele não conseguia manter mais sozinho, então registrou
+
+como open source, software livre.
+
+
+uma das maiores contribuições para a linguagem surgiu em 1997 em Israel Institute os Technology
+
+onde tinha dois estudantes Andi Gutmans e Zeev Suraski estavam desenvolvendo um software de loja
+
+tiveram contato com o PHP e decidiram contribuir em 1998 pra frente, porque achavam que a linguagem
+
+tinha potencial mas não atendia todas as necessidades.
+
+
+Nesse mesmo ano de 1998 ela ganhou a versão 3.0 quando esses dois mexeram no código, fazendo que
+
+se tornasse uma linguagem de verdade, eles achavam que o nome do Personal Home Page era fraco
+
+porque não era mais só uma ferramenta pra criar site pessoal, era uma linguagem de programação,
+
+dai a galera se reuniu e pensou, a sigla PHP é muito importante, o nome é fraco, mas a sigla
+
+todos já conhecem, dai colocaram o nome PHP: Hypertext Preprocessor.
+
+
+Dois outros caras fizeram a logo e o mascote, Colin Viebrock fez a logo, Vincent Pontier fez
+
+o mascote elefante.
+
+
+ElePHPant, o mascote é um elefante porqure a sigla tem esse desenho se tu prestar atenção, PHP.

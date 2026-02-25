@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box</title>
+    <style>
+
+        div.conteiner {
+            background-color: lightsalmon;
+            height: 100px;
+            display: flex;
+            flex-flow: column wrap;
+        }
+
+        div.item {
+            background-color: lightskyblue;
+            border: 1px solid black;
+            text-align: center;
+            flex: auto;
+        }
+
+    </style>
+</head>
+<body>
+   <div class="conteiner">
+    <div class="item">Exemplo de Bloco A</div>
+    <div class="item">Exemplo de Bloco B</div>
+    <div class="item">Exemplo de Bloco C</div>
+    <div class="item">Exemplo de Bloco D</div>
+    <div class="item">Exemplo de Bloco E</div>
+    <div class="item">Exemplo de Bloco F</div>
+    <div class="item">Exemplo de Bloco G</div>
+   </div>
+</body>
+</html>
+
+<!--flex direction (configurações): 
+
+flex-direction: row; (padrão, linha) e row-reverse (os itens vão ser colocados da direita pra esquerda)
+flex-direction; column; (em pé com itens de cima pra baixo) column-reverse; (para colocar os itens de baixo pra cima)
+-->
+
+<!-- Eixos
+
+
+
+
+main-axis tem o ponto inicial e final, o main-start e main-end também é criado o cross-axis que tem o cross-start e cross-end no row-reverse os sentidos horizontais se revertem também | já no colum o main axis vai de cima pra baixo e o cross vai da esquerda pra direita, vai inverter da mesma forma no column-reverse -->
+
+<!--handshort: flex-flow: row nowrap-->
+
+<!--justify-content: flex-start, flex-end, center, space between, space-evenly, space-around-->

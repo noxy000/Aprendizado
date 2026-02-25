@@ -1,0 +1,16 @@
+functions
+objetos
+modularização
+RegEx
+JSON
+AJAX
+Nodejs
+
+
+Introdução de Objeto
+
+
+let amigo {nome:'José',sexo:'Masculino',Peso:85.4,engordar(p){}}
+
+nome, sexo, peso etc... são os atributos, mas é possível guardar functions dentro, como o "engordar"
+não vai ser igual os arrays que embaixo seria o índice 0, agora no objeto ele realmente tem um nome

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu primeiro programa</title>
+    <style>
+        body {
+            background-color: rgb(105, 105, 173);
+            color: white;
+            font: normal 20pt Arial;
+        }
+        h1 {
+            color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <h1>Olá, mundo!</h1>
+    <p>Já me livrei da maldição</p>
+    <script>
+        var n1 = Number(window.prompt('Digite um número: ')) //string
+        var n2 = Number(window.prompt('Digite outro número: ')) //string
+        var s = n1 + n2
+        window.alert(`A soma entre ${n1} + ${n2} é igual a ${s}`)
+        // (number + number) para adição
+        // (string + string) para concatenação
+    </script>
+</body>
+</html>
+
+<!-- 
+Converter string pra número dá pra usar: 
+Number.parseInt(n) ou simplesmente parseInt, isso para número inteiro
+agora se quiser converter número com vírgula aí usamos;
+Number.parseFloat(n)
+
+mas se quiser que o js se vire pra ver se é número quebrado ou inteiro apenas use Number(n)
+
+
+
+Agora de número pra string pode usar:
+String(n)
+n.toString()
+
+dessa forma:
+window.alert('a soma dos valores é: ' + s.toString())
+window.alert('a soma dos valores é: ' + String(s))
+
+
+
+
+s.length para ver quantos caracteres a string tem
+s,toUpperCase() tudo para letras maiusculas
+s.toLowerCase() tudo para minusculas
+-->

@@ -1,0 +1,39 @@
+Uma variável composta do tipo array ou vetor:
+
+vaga a = [carro1 , carro2 , carro3]
+índice =     0        1        2
+conteúdo = o valor da variável
+elemento é o que agrupa tudo isso
+
+
+Para adicionar valores ao array:
+
+let num [5,8,4]
+num[3] = 6
+ele cria o espaço 3 que não existia e coloca o 6 ficando:
+
+[5,8,4,6]
+
+pra acrescentar valores sem se preocupar em saber a ultima posição o comando certo é:
+
+num.push(7)
+
+acrescentando 7 a posição 4
+
+num = [5,8,4,6,7]
+
+para saber o comprimento do array:
+
+num.length
+
+nesse caso [5,8,4,6,7] temos 5 elementos
+
+num.sort() -> ele vai botar os números em ordem crescente = [4,5,6,7,8]
+
+buscar valores dentro de um vetor:
+
+num.indexOf(7)
+nesse caso ele iria achar e diria que tá no posição 3
+[4,5,6,7,8]
+
+num.indexOf(3) não ia achar e ia retornar -1

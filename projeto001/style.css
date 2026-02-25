@@ -1,0 +1,109 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+:root {
+  /* Cores Principais */
+  --cor-primaria: #2d5a27;    /* Verde Floresta */
+  --cor-secundaria: #a3b18a;  /* Verde Sálvia */
+  --cor-destaque: #bc6c25;    /* Marrom Terra/Argila */
+  
+  /* Cores de Fundo e Texto */
+  --cor-fundo: #fefae0;       /* Creme/Papel */
+  --cor-texto: #283618;       /* Verde Escuro quase preto */
+  
+  /* Espaçamento e Fontes */
+  --fonte-titulo: 'Montserrat', sans-serif;
+  --fonte-corpo: 'Lora', serif;
+  --gap-padrao: 20px;
+}
+
+/* Como usar: */
+body {
+  background-color: #e4e4e4;
+  color: var(--cor-texto);
+  font-family: var(--fonte-corpo);
+}
+
+header {
+    background-color: var(--cor-secundaria);
+    padding: 20px;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+h1 {
+  color: var(--cor-primaria);
+  font-family: var(--fonte-titulo);
+}
+
+main {
+    background-color: var(--cor-fundo);
+    width: 90vw;
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    text-indent: 10px;
+}
+
+main h2 {
+    font-size: 1.6em;
+    font-weight: bolder;
+    color: var(--cor-primaria);
+    font-family: var(--fonte-titulo);
+    margin: 8px 0px;
+}
+
+main strong {
+    color: var(--cor-primaria);
+    font-family: var(--fonte-titulo);
+    font-weight: bold;
+}
+
+main ul {
+    list-style: none;
+    padding-bottom: 15px;
+}
+
+cite {
+    color: var(--cor-primaria);
+}
+
+.bloco {
+    background-color: #e4e4e4;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border-left: 5px solid var(--cor-primaria);
+}
+
+footer {
+    background-color: var(--cor-fundo);
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+@media screen and (min-width: 786px) {
+    .pilares {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 5px; 
+}
+    main {
+        max-width: 786px;
+    }
+    main li {
+        background-color: var(--cor-fundo);
+        margin: 10px;
+        padding: 10px;
+        border-radius: 8px;
+        border-top: 4px solid var(--cor-primaria);
+    }
+}

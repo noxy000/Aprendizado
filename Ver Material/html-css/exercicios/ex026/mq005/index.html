@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-query.css">
+</head>
+<body onresize="mudouTamanho()">
+    <header>
+        <h1>Meu site</h1>
+        <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">menu</span> <!-- ou usando i -->
+        <menu id="itens">
+            <ul>
+                <li><a href="#">Opção 1</a></li>
+                <li><a href="#">Opção 2</a></li>
+                <li><a href="#">Opção 3</a></li>
+                <li><a href="#">Opção 4</a></li>
+                <li><a href="#">Opção 5</a></li>
+            </ul>
+        </menu>
+    </header>
+    <main>
+        <article>
+            <h2>Testando Media Queries</h2>
+
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi in eaque odio sit repellat vitae aspernatur error reiciendis necessitatibus officiis ea illo nesciunt possimus dolor tenetur quam natus, unde quibusdam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto iste officiis consequatur! Exercitationem vel totam error excepturi ut, maxime suscipit veniam, harum accusamus quae, vitae fugit possimus. In, fugit sed? Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui fugiat nemo vero eius doloribus iusto blanditiis ratione consequuntur! Repudiandae nemo laudantium molestias harum iusto, porro distinctio natus veritatis voluptate voluptatem!</p>
+
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi in eaque odio sit repellat vitae aspernatur error reiciendis necessitatibus officiis ea illo nesciunt possimus dolor tenetur quam natus, unde quibusdam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto iste officiis consequatur! Exercitationem vel totam error excepturi ut, maxime suscipit veniam, harum accusamus quae, vitae fugit possimus. In, fugit sed?</p>
+
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi in eaque odio sit repellat vitae aspernatur error reiciendis necessitatibus officiis ea illo nesciunt possimus dolor tenetur quam natus, unde quibusdam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto iste officiis consequatur! Exercitationem vel totam error excepturi ut, maxime suscipit veniam, harum accusamus quae, vitae fugit possimus. In, fugit sed? Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur fuga accusamus, perspiciatis aliquam praesentium molestiae itaque cupiditate esse autem? Maxime maiores aut vitae animi, ex a itaque nulla consequuntur id.</p>
+
+        </article>
+    </main>
+    <script>
+    function mudouTamanho() {
+        if (window.innerWidth >= 768) {
+            itens.style.display = 'block'
+        } else {
+            itens.style.display = 'none'
+        }
+    }
+
+    function clickMenu() {
+        if (itens.style.display == 'block') {
+            itens.style.display = 'none'
+        } else {
+            itens.style.display = 'block'
+        }
+    }
+</script>
+</body>
+</html>

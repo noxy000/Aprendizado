@@ -1,0 +1,94 @@
+Operadores
+
+Aritméticos + - * / % **
+
+    > 5+2
+    7
+    > 5-2
+    3
+    > 5*2
+    10
+    > 5%2
+    1
+    > 5/2
+    2.5
+    > 5**2
+    25
+
+Atribuição
+
+    Simplificações
+
+    var n = 3
+    n = n + 4     n  += 4
+    n = n - 5     n  -= 4
+    n = n * 4     n  *= 4
+    n = n / 2     n  /= 4
+    n = n ** 2    n **= 4
+    n = n % 5     n  %= 4
+
+    Incremento
+
+    Se quiser somar apenas +1 de forma ainda mais simplificada
+
+    var x = 5
+    > x ++
+    5
+    > x
+    6
+
+    x-- também funcionaria para diminuir apenas 1
+
+Relacionais
+
+    5 > 2 true
+    7 < 4 false
+    8 >= 8 true
+    9 <= 6 false
+    5 == 5 true
+    4 != 4 false
+
+    Operadores de Identidade
+        5 == 5 true 5 é igual a 5 (Operador de igualdade)
+        5 == '5' true 5 é igual a 5 sendo string? sim, porque o js verifica o valor da grandeza e não o tipo nesse caso
+        5 === '5' false é realmente IGUAL? não, o tipo é diferente (Operador de igualdade restrita)
+
+        Testes
+            > x = 5
+            5
+            > y = '5'
+            '5'
+            > x == y
+            true
+            > x === y
+            false
+            > x != y
+            false
+            > x !== y (Desigual restrito)
+            true
+Lógicos
+
+    !  negação
+    && conjunção (E)
+    || disjunção (OU)
+
+Ternário
+    teste?true:false Junta 3 operandos
+    Média>=7?"Aprovado":"Reprovado"
+
+        Testes
+            > var média = 5.5
+            undefined
+            > média > 7?'Aprovado' : 'Reprovado'
+            'Reprovado'
+            > média += 3
+            8.5
+            > média > 7?'Aprovado' : 'Reprovado'
+            'Aprovado'
+            > var idade = 19
+            undefined
+            > var r = idade >= 18?'Maior' : 'Menor'
+            undefined
+            > r
+            'Maior'
+

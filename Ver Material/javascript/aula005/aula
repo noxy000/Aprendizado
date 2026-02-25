@@ -1,0 +1,16 @@
+podemos coemçar com letras, $ ou _
+não podemos começar com números
+é possível usar letras ou números
+é possível usar acentos e símbolos
+não podem conter espaços
+não podem ser palavras reservadas como "var"
+
+maiúsculas e minúsculas fazem diferença
+
+number: 5 18 -12 (inteiros) 0.5 -15.9 3.14 8.0 (reais, ponto flutuante, float)
+
+string: "Google", 'JavaScript', `Maria`
+
+boolean: true, false
+
+number tem infinity, NaN
