@@ -1,0 +1,106 @@
+COMERNada
+
+C - Confiável: isolamento entre partes do código
+
+O - Oportuno: várias partes podem ser desenvolvidas em paralelo
+
+M - Manutenível: atualizar fica mais fácil
+
+E - Extensível: o software pode crescer para permanecer útil, não é estático
+
+R - Reutilizável: se criar uma classe ela pode ser usada várias vezes em diferentes situações
+
+N - Natural: mais fácil de entender
+
+--------------------------------------
+
+Usando o exemplo da caneta
+
+Coisas que eu tenho: (Atributos)
+modelo, cor, ponta, carga, tampada
+
+Coisas que eu faço: (Métodos)
+escrever, rabiscar, pintar, tampar. destampar
+
+Como eu estou agora? (Estado)
+
+--------------------------------------
+
+Para fazer uma caneta eu primeiro preciso fazer uma classe, o molde dessa caneta
+
+Classe caneta 
+    modelo: caractere
+    cor: caractere
+    ponta: real
+    carga: inteiro
+    tampada: logico
+
+Método rabiscar()
+        Se (tampada) entao
+            escrever("ERRO")
+        senao
+            escrever("Rabisco")
+        fimSe
+FimMétodo
+
+Método tampar()
+        tampada = verdadeiro
+    FimMétodo
+FimClasse
+
+
+--------------------------------------
+
+
+Atributos
+
+modelo = "BIC Cristal"
+cor = "Azul"
+ponta = 0.5
+carga = 90
+tampada = falso
+
+Métodos
+
+escrever 
+rabiscar
+pintar
+tampar
+destampar
+
+Estado 
+
+destampado
+Azul
+90% de carga
+
+
+--------------------------------------
+
+
+transformar classe em objeto se chama instanciar
+
+c1 = nova Caneta
+c1.cor = "Azul"
+c1.ponta = 0.5
+c1.tampada = false
+c1.rabiscar()
+
+c2 = nova Caneta
+c2.cor = "Vermelha"
+c2.ponta = 1.0
+c2.tampada = false
+c2.tampar()
+
+
+--------------------------------------
+
+Classe: define os atributos e métodos comuns que serão compartilhados por um objeto.
+toda caneta que eu instanciar com o método vai ter todas aquelas caracteristicas e métodos, tampar, destampar e etc...
+
+
+--------------------------------------
+
+
+Objeto: é a instância de uma classe
+todas as canetas podem ter o mesmo modelo mas características diferentes

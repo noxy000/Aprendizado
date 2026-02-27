@@ -1,0 +1,50 @@
+Linguagem de
+Modelagem
+Unificada
+
+(UML)
+
+Diagrama de Classes
+
+Para ela toda classe seria representada como um retângulo
+
+Modificadores de vísibilidade: indicam o nível de acesso aos componentes internos de uma classe.
+
+Você pode utilizar 3 símbolos pra isso:
+
++ pública: Todos acessam.
+- privada: Só a própria classe acessa.
+# protegido: A própria classe e suas herdeiras (subclasses) acessam.
+
+
+Classe Caneta
+    publico modelo: Caractere
+    publico cor: Caractere
+    privado ponta: Real
+    protegido carga:  Inteiro
+    protegido tampada: Logico
+
+    publico Metodo escrever()
+
+    FimMetodo
+    publico Metodo rabiscar()
+
+    FimMetodo
+FimClasse
+
+Criando objeto
+
+c1 = nova Caneta
+c1.modelo = "BIC Crystal"  -- Essa linha pode ser mexida porque o "modelo" é publico
+c1.cor = "Azul"
+c1.ponta = 0.5  -- Isso não vai funcionar, "ponta" é privado, só pode ser modificado com métodos acessores/modificadores
+c1.carga = 80  -- Não vai alterar porque essa modificação não está dentro da classe
+c1.tampado = falso
+
+c1.escrever() -- Posso fazer isso, ta definido como publico
+c1.escrever()
+
+
+Mudando a visibilidade
+
+Aula 7 | 4:29
