@@ -1,0 +1,31 @@
+Encapsulamento
+
+A programação orientada a objetos tem 3 piláres
+
+(EHP) Encapsulamento, Herança, Polimorfismo(Muitas formas).
+
+Tem algumas biografias que dizem que tem Abstração também (AEHP)
+
+mas dá pra se dizer que a Abstração tá dentro do Encapsulamento
+
+Ocultar partes independentes da implementação, permitindo partes invisíveis ao mundo exterior.
+
+No exemplo da pilha, os polos seria a Interface que protege ele
+
+Interface: Lista de serviços fornecidos por um componente. É o contato com o mundo exterior,
+
+que define o que pode ser feito com um objeto dessa classe.
+
+
+Encapsular não é obrigatório, mas é uma boa prática para produzir classes mais eficientes
+
+Vantagens de Encapsular
+
+1. tornar mudanças invisíveis
+
+2. facilitar a reutilização de código
+
+3. reduzir efeitos colaterais
+
+
+Como encapsular?

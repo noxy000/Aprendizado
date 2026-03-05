@@ -1,0 +1,72 @@
+Métodos Especiais
+
+Métodos Acessores(Getters) Pegam alguma coisa
+
+Inseguro
+e = nova Estante
+t = e.totDoc
+
+Seguro
+e = nova Estante
+t = e.getTotDoc()
+
+Adicionar documentos (Inseguro)
+e.getTotDoc = e.getTotDoc + 1
+
+Método Modificador(Setters) (Seguro)
+e.setTotDoc(doc) doc sendo o documento que vai ser guardado
+
+
+
+Classe Caneta
+    publico modelo: Caractere
+    privado ponta: Real
+    publico Metodo getModelo()
+        retorne modelo
+    FimMetodo
+    publico Metodo setModelo
+        (m: Caractere)
+        modelo = m
+    FimMetodo
+    publico Metodo getPonta()
+        retorne ponta
+    FimMetodo
+    publico Metodo setPonta
+        (p: Real)
+        ponta = p
+    FimMetodo
+FimClasse
+
+c1 = nova Caneta
+c1.setModelo("BIC Crystal")
+c1.setPonta(0.5)
+Escreva (c1.getModelo())
+Escreva (c1.getPonta())
+
+Método Construtor
+
+Classe Caneta
+    Metodo Construtor <- Assim que eu criar, a caneta vem tampada e azul
+        tampar()
+        cor = "Azul"
+    FimMetodo
+FimClasse
+
+Método Construtor pode receber parâmetros também
+
+Classe Caneta
+    publico modelo: Caractere
+    privado ponta: Real
+    publico Metodo getModelo()
+        retorne modelo
+    FimMetodo
+    publico Metodo setModelo(m: Caractere)
+        modelo = m
+    FimMetodo
+    publico Metodo getPonta()
+        retorne ponta
+    FimMetodo
+    publico Metodo setPonta(p: Real)
+        ponta = p
+    FimMetodo
+FimClasse
