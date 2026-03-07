@@ -1,0 +1,78 @@
+Herança
+
+As classes principais são as raizes
+
+Todas as classes que são filhas e não tem filhas são as folhas
+
+Também existem os descendentes e os ancestrais, que funcionam da forma que a imagem apresenta
+
+Quando você percorre a árvore de cima para baixo você está fazendo uma "Especialização"
+
+Quando você percorre de cima para baixo você está fazendo uma "Generalização"
+
+
+
+Tipos de Herança
+
+Herança de Implementação: mais simples
+
+digamos que tem uma classe pessoa mãe, ai vem a subclasse visitante, que tem somente o que a mãe tem a mais nada adicionado
+
+isso é a herança de implementação
+
+Herança para Diferença: mais completa, adiciona mais coisas, uma especialização
+
+
+Classe abstrata: uma classe abstrata nao pode ser instanciada, só pode servir como progenitora
+
+método abstrato: declarado, mas não implementado na progenitora
+
+classe final: não pode ser herdada por outra classe. obrigatoriamente folha
+
+método final: não pode ser sobrescrito pelas suas sub-classes. obrigatoriamente herdado
+
+
+
+Exemplo
+
+classe abstrata Pessoa
+    privado nome: Caractere
+    privado idade: Inteiro
+    privado sexo: Caractere
+    publico metodo final fazerAniv()
+        (...)
+    fimMetodo
+FimClasse
+
+classe Visitante estende Pessoa
+    (...)
+FimClasse
+
+classe Aluno estende Pessoa
+    privado matricula: Inteiro
+    privado curso: Caractere
+    publico metodo PagarMensalidade() // paga de um jeito...
+        (...)
+    fimMetodo
+FimClasse
+
+classe Bolsista estende Aluno // tem tudo que aluno e pessoa tem
+    privado bolsa: Inteiro
+    publico metodo RenovarBolsa()
+        (...)
+    fimMetodo
+    @Sobrepor
+    publico metodo PagarMensalidade() // paga de outro
+        (...)
+    fimMetodo
+FimClasse
+
+// Programa Principal
+p1 = novo Pessoa() // (Não funciona, Pessoa é abstrato)
+v1 = novo Visitante()
+a1 = novo Aluno()
+b1 = novo Bolsista()
+
+Isso de sobrepor a mensalidade já é polimorfismo, coisa com mesmo nome
+
+só que mais de uma forma de pagar

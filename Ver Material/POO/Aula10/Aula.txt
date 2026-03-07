@@ -1,0 +1,5 @@
+Herança
+
+A classe mãe pode ser chamada de superclasse ou progenitora
+
+as filhas herdam comportamentos e características da mãe e podem ser chamadas de subclasses
