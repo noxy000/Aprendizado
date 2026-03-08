@@ -3,9 +3,9 @@
 abstract class Pessoa
 { //
     //Atributos
-    private $nome;
-    private $idade;
-    private $sexo;
+    protected $nome;
+    protected $idade;
+    protected $sexo;
 
     public final function fazerAniv()
     { //

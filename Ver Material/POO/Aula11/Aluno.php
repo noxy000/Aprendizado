@@ -1,12 +1,12 @@
 <?php 
 require_once 'Pessoa.php';
-class Aluno extends Pessoa {
+/*final*/ class Aluno extends Pessoa { // Final não deixaria o Bolsista herdar de aluno
     private $matricula;
     private $curso;
 
-    public function pagarMensalidade() {
-
-    }
+    public /*final*/ function pagarMensalidade() { // Com final não deixaria ser sobreposto
+        echo "<p>Pagando mensalidade do aluno <strong>$this->nome</strong></p>";
+    } // Quando os atributos de Pessoa são protected aí dá pra chamar diretamente o atributo
     
     // Getters e Setters
     public function getMatricula() {
@@ -23,7 +23,7 @@ class Aluno extends Pessoa {
 
     public function setCurso($curso) {
         $this->curso = $curso;
-    } // 9m 29s | aula 11b
+    }
 }
 
 ?>
