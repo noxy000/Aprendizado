@@ -1,0 +1,30 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.caixa {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 5px;
+}
+
+.exercicio {
+    background-color: #ababab;
+    padding: 10px;
+}
+
+.camaleao {
+    background-color: #ababab;
+    padding: 10px;
+}
+
+input {
+    border-radius: 3px;
+    border: 1px solid black;
+    padding: 2px;
+}
+
+input:focus {
+    outline: 1px solid white;
+}

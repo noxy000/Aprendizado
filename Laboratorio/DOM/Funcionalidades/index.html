@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="caixa">
+        <div class="exercicio">
+            <input type="number" id="numero">
+            <input type="button" value="Adicionar +" onclick="add()">
+            <input type="button" value="Finalizar" onclick="finalizar()"> <br>
+            <select name="sel" id="sel"></select>
+            <div class="res"></div>
+        </div>
+        <div class="exercicio">
+            <input type="text" name="nome" id="nome" placeholder="Nome">
+            <input type="button" value="Inverter" onclick="inverter()">
+            <div id="res1"></div>
+        </div>
+        <div class="camaleao">
+            <input type="text" name="cor" id="cor" placeholder="Cor em Inglês">
+            <input type="button" value="Mudar Cor" onclick="mudarCor()">
+            <div id="res2"></div>
+        </div>
+        <div class="exercicio">
+            <input type="button" value="Click" onclick="contar()">
+            <input type="button" value="Zerar" onclick="zerar()">
+            <p id="res">O botão foi clicado 0 vezes</p>
+        </div>
+        <div class="exercicio">
+            <p id="relogio">Agora é...</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

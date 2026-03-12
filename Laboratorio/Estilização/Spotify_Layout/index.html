@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_back_ios,arrow_forward_ios,bookmark,diversity_3,favorite,home,notifications,open_in_full,search,stacks" />    
+    <title>Spotify Flex</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="setas">
+            <button><span class="material-symbols-outlined">arrow_back_ios</span></button>
+            <button><span class="material-symbols-outlined">arrow_forward_ios</span></button>
+        </div>
+        <div class="pesquisa">
+            <button><span class="material-symbols-outlined">home</span></button>
+            <div class="caixa">
+                <span class="material-symbols-outlined search">search</span>
+                <input type="text" name="pesquisa" id="pesquisa" placeholder="O que você quer ouvir?                           |" size="30">
+                <span class="material-symbols-outlined albuns">stacks</span>
+            </div>
+        </div>
+        <div class="config">
+            <p>Ver planos premium</p>
+            <button><span class="material-symbols-outlined">notifications</span></button>
+            <button><span class="material-symbols-outlined">diversity_3</span></button>
+
+            <img src="perfil.jpg" alt="Perfil">
+        </div>
+    </header>
+    <div class="layout">
+
+    <section class="biblioteca">
+        <div class="guard">
+            <div class="topo-opcoes">
+                <div class="header-biblioteca">
+                    <h1>Sua Biblioteca</h1>
+                </div>
+                    <div class="botoes-topo">
+                        <button class="buti">+ Criar</button>
+                        <button class="open"><span class="material-symbols-outlined">open_in_full</span></button>
+                    </div>
+            </div>
+            <div class="detalhes">
+                <button class="">Playlists</button>
+                <button>Podcasts</button>
+            </div>
+            <div class="udetalhes">
+                <span class="material-symbols-outlined search">search</span>
+                <div style="display: flex; align-items: center; gap: 5px; font-size: 0.85em;" ><p>Recentes</p><span class="material-symbols-outlined albuns">stacks</span></div>
+            </div>
+        </div>
+        <aside class="playlists">
+                <div class="playlist-item">
+                    <div class="playcapa" style="background-image: linear-gradient(-40deg, rgb(185, 185, 255), rgb(47, 29, 152));">
+                        <span class="material-symbols-outlined">favorite</span>
+                    </div>
+                    <div class="info-playlist">
+                        <h4>Músicas Curtidas</h4>
+                        <p>Playlist • 1 música</p>
+                    </div>
+                </div>
+                <div class="playlist-item">
+                    <div class="playcapa" style="background-image: linear-gradient(-40deg, rgb(12, 117, 75), rgb(28, 167, 93));">
+                        <span class="material-symbols-outlined">bookmark</span>
+                    </div>
+                    <div class="info-playlist">
+                        <h4>Seus episódios</h4>
+                        <p>Playlist • episódios salvos e baixados</p>
+                    </div>
+                </div>
+            </aside>
+    </section>
+    <main class="feed">
+        <div class="sugest">
+            <div class="sugestimage">
+                <div style="width: 150px; height: 150px; background-color: gray; border-radius: 10px;"></div>
+            </div>
+            <div class="sugestinfo">
+                    <div class="titulos">
+                        <p>Álbun</p>
+                        <h1>Kiss All The Time.</h1>
+                        <h2>Disco, Occasionaly.</h2>
+                        <a href="#">Harry Styles</a>
+                    </div>
+                    <div class="botoesinfo">
+                        <button style="background-color: #2bf62b; border: none;">Play</button>
+                        <button style="background-color: transparent; border: 2px solid #ffffff85; color: white;">Salvar</button>
+                    </div>
+            </div>
+        </div>
+        <div class="optsmain">
+            <div class="seilakk">
+                <button>Tudo</button>
+                <button>Músicas</button>
+                <button>Podcasts</button>
+            </div>
+            <div class="recentesplay">
+                <div class="albunrecente"></div>
+                <div class="albunrecente"></div>
+                <div class="albunrecente"></div>
+                <div class="albunrecente"></div>
+                <!--style quebra a linha aqui-->
+                <div class="albunrecente"></div>
+                <div class="albunrecente"></div>
+                <div class="albunrecente"></div>
+                <div class="albunrecente"></div>
+            </div>
+        </div>
+
+    </main>
+    <aside class="info-musica">
+
+    </aside>
+
+    </div>
+</body>
+</html>

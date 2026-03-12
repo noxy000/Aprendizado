@@ -1,0 +1,350 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    display: flex;
+    background-color: black;
+    color: white;
+    justify-content: space-between;
+    padding: 3px 0px;  
+}
+
+.setas {
+    margin-left: 20px;
+    margin-top: 5px;
+}
+
+.setas button {
+    color: #cbcbcb;
+    background-color: rgba(0, 0, 0, 0);
+    padding: 2px;
+    border: none;
+    border-radius: 50%;
+}
+
+.setas button:hover {
+    color: white;
+}
+
+.pesquisa {
+    display: flex;
+    align-self: center;
+    gap: 8px;
+}
+
+.pesquisa button {
+    background-color: #3d3d3d;
+    padding: 6px;
+    border-radius: 50%;
+    border: none;
+    color: #cbcbcb;
+}
+
+.pesquisa button:hover {
+    color: white;
+    background-color: #3d3d3d;
+}
+
+.pesquisa button:focus {
+    font-variation-settings: 'FILL' 1, 'wght' 1000, 'GRAD' 0, 'opsz' 48;
+    color: white;
+}
+
+.pesquisa input {
+    background-color: #3d3d3d;
+    border: none;
+    padding: 10px 0px;
+}
+
+.caixa {
+    display: flex;
+    border-radius: 20px;
+}
+
+.caixa .search {
+    background-color: #3d3d3d;
+    padding: 6px 10px 0px 7px;
+    border-radius: 20px 0px 0px 20px;
+    color: #6d6d6d;
+}
+
+.caixa .albuns {
+    background-color: #3d3d3d;
+    padding: 6px 10px 0px 0px;
+    border-radius: 0px 20px 20px 0px;
+    color: #6d6d6d;
+}
+
+.caixa:focus-within { /*se qualquer coisa aqui dentro tiver o foco, aplique o estilo em mim*/
+    outline: 2px solid white;
+    box-shadow: 0 0 0 2px white;
+}
+
+.pesquisa input:focus {
+    outline: none;
+}
+
+.config {
+    display: flex;
+    gap: 15px;
+}
+
+.config > p {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    color: black;
+    margin: 5px;
+    padding: 5px 8px 5px 8px;
+    font-weight: bold;
+    border-radius: 20px;
+    font-size: 0.8em;
+    cursor: pointer;
+    transition: transform 0.1s ease;
+}
+
+.config > p:hover {
+    transform: scale(1.02);
+    background-color: #ebebeb;
+}
+
+.config button {
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    color: #cbcbcb;            
+}
+
+.config button:hover {
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    transform: scale(1.04);
+}
+
+.config img:hover{
+    transform: scale(1.03);
+}
+
+.config span {
+    font-size: 1.5em;
+}
+
+.config img {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: 6px solid #3d3d3d;
+    margin-right: 10px;
+}
+
+.layout {
+    border: 3px dotted black;
+    margin: auto;
+    max-width: 99vw;
+    height: calc(100vh - 100px);
+    display: flex;
+    gap: 6px;
+}
+
+.layout .biblioteca {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: start;
+    border-radius: 10px;
+
+    background-color: #262626;
+    height: calc(100% - 4px);
+    flex: 0 1 300px;
+}
+
+.guard {
+    display: flex;
+    align-items: start;
+    width: 98%;
+    flex-flow: column;
+    gap: 10px;
+    margin: 0px 8px;
+}
+
+.topo-opcoes {
+    display: flex;
+    margin-top: 5px;
+    align-items: center;
+    width: 100%;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.botoes-topo {
+    display: flex;
+    gap: 10px;
+}
+
+.buti {
+    display: flex;
+    align-items: center;
+    background-color: #6d6d6d62;
+    padding: 8px;
+    border: none;
+    border-radius: 20px;
+    color: white;
+}
+
+.botoes-topo button {
+    display: flex;
+}
+
+.header-biblioteca {
+    display: flex;
+    flex-flow: row wrap;
+    font-size: 0.5em;
+    color: #cbcbcb;
+}
+
+.layout .open {
+    background-color: transparent;
+    border: none;
+    color: #cbcbcb;
+}
+
+.detalhes button {
+    background-color: #404040;
+    padding: 8px;
+    border-radius: 20px;
+    border: none;
+    color: #cbcbcb;
+}
+
+.udetalhes {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    color: #cdcdcd;
+}
+
+.layout .playlists {
+    display: flex;
+    align-items: start;
+    flex-flow: column;
+    gap: 5px;
+    margin: auto;
+    width: 95%;
+    height: 80%;
+}
+
+.playlist-item {
+    padding: 5px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    color: white;
+    font-size: small;
+    border-radius: 10px;
+    width: 96%;
+}
+
+.playlist-item:hover {
+    background-color: #3d3d3d;
+}
+
+.playcapa {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-variation-settings: 'FILL' 1;
+    border-radius: 10px;
+    width: 48px;
+    height: 48px;
+    color: white;
+}
+
+.info-playlist p {
+    color: #a3a3a3;
+}
+
+.playcapa span {
+    transform: scale(0.80);
+}
+
+.layout .feed {
+    display: flex;
+    flex-flow: column wrap;
+    flex: 1; /* Faz o meio ocupar todo o espaço restante */
+    background-image: linear-gradient(to bottom, #6351bb, #121212 70%);
+    border-radius: 10px;
+    padding: 20px;
+    overflow-y: auto; /* Permite rolar as músicas se a lista for longa */
+    gap: 30px;
+}
+
+.sugest {
+    padding: 10px;
+    background: linear-gradient(-120deg, transparent, rgb(0, 0, 0)),transparent;
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 10px;
+    color: white;
+}
+
+.sugest a {
+    color: white;
+}
+
+.sugestinfo {
+    display: flex;
+    flex-flow: column;
+    border: 2px dotted blue;
+}
+
+.sugestinfo button {
+    margin-top: 20px;
+    border-radius: 20px;
+    padding: 10px 0px;
+    width: 80px;
+    text-align: center;
+}
+
+.optsmain {
+    display: flex;
+    flex-flow: column;
+    border: 2px dotted black;
+    gap: 20px;
+}
+
+.recentesplay {
+    display: grid;
+    grid-template-rows: 38px 38px;
+    grid-template-columns: repeat(4, 170px);
+    gap: 6px;
+}
+
+.albunrecente {
+    background-image: linear-gradient(to bottom, gray, white);
+    border-radius: 5px;
+    box-shadow: inset 0px 0px 10px;
+    border: 2px solid white;
+}
+
+.layout .info-musica {
+    background-color: #3d3d3d;
+    max-height: 100vh;
+}
+
+.btn-spotify {
+    background-color: #404040;
+    padding: 8px 16px;
+    border-radius: 20px;
+    border: none;
+    color: #cbcbcb;
+    font-size: 0.85em;
+    cursor: pointer;
+    font-weight: bold;
+    transition: transform 0.1s;
+}
+
+.btn-spotify:hover {
+background-color: #4d4d4d;
+transform: scale(1.04);
+}
