@@ -12,8 +12,8 @@
         <div class="exercicio">
             <input type="number" id="numero">
             <input type="button" value="Adicionar +" onclick="add()">
-            <input type="button" value="Finalizar" onclick="finalizar()"> <br>
-            <select name="sel" id="sel"></select>
+            <input type="text" id="txtfiltro" oninput="filtrar()" placeholder="Filtrar" size="8"><br>
+            <select name="sel" id="sel" onclick="remover()"></select>
             <div class="res"></div>
         </div>
         <div class="exercicio">
@@ -33,6 +33,14 @@
         </div>
         <div class="exercicio">
             <p id="relogio">Agora é...</p>
+        </div>
+        <div class="exercicio">
+            <h2>Lista de Tarefas</h2>
+            <input type="text" name="tarefa" id="tarefa">
+            <input type="button" value="Adicionar Tarefa" onclick="adicionarTarefa()">
+            <ul id="tarefas">
+
+            </ul>
         </div>
     </div>
     <script src="script.js"></script>

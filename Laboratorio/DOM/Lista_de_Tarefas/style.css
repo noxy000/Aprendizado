@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Isso ajuda a não quebrar o tamanho com padding */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(193, 193, 193);
+    /* Centraliza a lista inteira na tela */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lista-de-tarefas {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 350px; /* Largura fixa para ficar com cara de app */
+}
+
+.adicionar-tarefa, .tarefas-salvas {
+    border-radius: 10px;
+    background-color: aliceblue;
+    border: 1px solid #929292;
+    padding: 20px;
+    box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#tarefa {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: all 0.3s;
+}
+
+#tarefa {
+    background-color: #e0e0e0;
+}
+
+#tarefa:focus {
+    background-color: #ffffff;
+    outline: none;
+    border-color: rgb(50, 255, 50);
+    box-shadow: 0 0 5px rgba(50, 255, 50, 0.5);
+}
+
+.btn {
+    background-color: rgb(50, 255, 50);
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #333;
+    cursor: pointer;
+    font-weight: bold;
+    transition: transform 0.1s, background-color 0.2s;
+}
+
+.btn:hover {
+    background-color: rgb(30, 220, 30);
+    transform: scale(1.02);
+}
+
+.tarefas-salvas ul {
+    list-style: none;
+}
+
+.tarefas-salvas li {
+    animation: aparecer 0.3s ease-out;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.tarefas-salvas li button {
+    background-color: rgb(255, 82, 82);
+    color: white;
+    padding: 5px 10px;
+    border: 1px solid black;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.tarefas-salvas li button:hover {
+    background-color: rgb(214, 45, 45); 
+    transform: scale(1.1);
+}
+
+/* Criando animação */
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.concluida {
+    text-decoration: line-through;
+    color: gray;
+}

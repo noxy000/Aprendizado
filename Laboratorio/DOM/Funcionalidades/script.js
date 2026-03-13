@@ -1,78 +1,141 @@
-var numeros = []
-        function add() {
-            let txti = document.getElementById('numero')
-            let numero = Number(txti.value)
-            let select = document.getElementById('sel')
-            let pos = numeros.indexOf(numero)
-            if (pos == -1 && numero !== 0) {
-                let item = document.createElement('option')
-                item.innerText = numero + " Adicionado"
-                select.size++
-                select.appendChild(item)
-                numeros.push(numero)
-                numeros.sort()
-                txti.value = ''
-                txti.focus()
-            } else {
-                window.alert("não pode repetir o numero")
-            }
+var numeros = [];
 
-        }
+// 1. MÁQUINA DE CALCULAR (Reutilizável)
+function atualizarPainel(lista) {
+    let res = document.querySelector('div.res');
+    
+    if (lista.length === 0) {
+        res.innerHTML = "Aguardando números...";
+        return;
+    }
 
-        function finalizar() {
-            if (numeros.length == 0) return window.alert("Adicione números primeiro!");
+    let maior = Math.max(...lista);
+    let menor = Math.min(...lista);
+    let soma = lista.reduce((acc, val) => acc + val, 0);
+    let media = soma / lista.length;
 
-            let res = document.querySelector('div.res');
-            let maior = numeros[0];
-            let menor = numeros[0];
-            let soma = 0;
-
-            for (let i = 0; i < numeros.length; i++) {
-                soma += numeros[i]; // Somando para a média
-                if (numeros[i] > maior) maior = numeros[i];
-                if (numeros[i] < menor) menor = numeros[i];
-            }
-
-            let media = soma / numeros.length;
-
-            res.innerHTML = `
-        <p>Total: ${numeros.length} números.</p>
+    res.innerHTML = `
+        <p>Total: ${lista.length} números.</p>
         <p>Maior: ${maior} | Menor: ${menor}</p>
         <p>Média: ${media.toFixed(2)}</p>
     `;
-        }
+}
 
-    
-    function inverter() {
-        let res = document.getElementById('res1');
-        res.value = '';
-        let texto = document.getElementById('nome').value;
-        let resultado = texto.split('').reverse().join('');
+// 2. ADICIONAR
+function add() {
+    let txti = document.getElementById('numero');
+    let numero = Number(txti.value);
+    let select = document.getElementById('sel');
+
+    if (numeros.indexOf(numero) == -1 && txti.value.length !== 0) {
+        numeros.push(numero);
+        numeros.sort((a, b) => a - b); // Garante ordem numérica
         
-        res.innerHTML = `Seu nome ao contrário é <strong>${resultado}</strong>`;
-    }
-
-    function mudarCor() {
-    let fundo = document.querySelector('div.camaleao');
-    let cor = document.getElementById('cor').value;
-
-    // Verifica se a cor é válida E se não está vazio
-    if (cor !== "" && CSS.supports('color', cor)) {
-        fundo.style.backgroundColor = cor;
+        // Atualiza a visualização
+        renderizarLista(numeros); 
+        atualizarPainel(numeros); // Atualiza estatísticas na hora
+        
+        txti.value = '';
+        txti.focus();
     } else {
-        fundo.style.backgroundColor = "#ababab";
+        alert("Número inválido ou já existente.");
     }
 }
 
-let cliques = 0
-const contagem = document.querySelector('p#res');
-    function contar() {
-        cliques++;
-        contagem.innerHTML = `O botão foi clicado ${cliques} vezes`;
+function remover() {
+    let select = document.getElementById('sel');
+    let indexado = select.selectedIndex; // nada seelcionado significa -1
+    if (indexado !== -1) { // tem algo indexado
+        numeros.splice(indexado, 1) // splice é apagar
+        select.remove(indexado)
+        atualizarPainel(numeros)
     }
+}
 
-let tempo_contado = document.querySelector('p#relogio')
-    setInterval(function tempo() { 
-        let agora = new Date().toLocaleTimeString();
-        tempo_contado.innerHTML = `Agora é ${agora}`
-    }, 1000)
+// 3. FILTRAR (Usa a mesma máquina)
+function filtrar() {
+    let digitado = document.getElementById('txtfiltro').value;
+    
+    // Cria lista só com o que combina
+    let filtrados = numeros.filter(n => n.toString().startsWith(digitado));
+
+    renderizarLista(filtrados); // Mostra só os filtrados no select
+    atualizarPainel(filtrados); // Calcula estatísticas só dos filtrados
+}
+
+// AUXILIAR: Desenha as options no select
+function renderizarLista(lista) {
+    let select = document.getElementById('sel');
+    select.innerHTML = '';
+    lista.forEach(n => {
+        let item = document.createElement('option');
+        item.text = n;
+        select.appendChild(item);
+    });
+}
+
+// --- RESTO DAS FUNÇÕES (O que já estava funcionando) ---
+
+function inverter() {
+    let res = document.getElementById('res1');
+    let texto = document.getElementById('nome').value;
+    res.innerHTML = `Seu nome ao contrário é <strong>${texto.split('').reverse().join('')}</strong>`;
+}
+
+function mudarCor() {
+    let fundo = document.querySelector('div.camaleao');
+    let cor = document.getElementById('cor').value;
+    fundo.style.backgroundColor = (cor !== "" && CSS.supports('color', cor)) ? cor : "#ababab";
+}
+
+let cliques = 0;
+function contar() {
+    cliques++;
+    document.querySelector('p#res').innerHTML = `O botão foi clicado ${cliques} vezes`;
+}
+
+function zerar() {
+    cliques = 0;
+    document.querySelector('p#res').innerHTML = `O botão foi clicado ${cliques} vezes`;
+}
+
+setInterval(() => {
+    document.querySelector('p#relogio').innerHTML = `Agora é ${new Date().toLocaleTimeString()}`;
+}, 1000);
+
+
+// . sort usando a - b quando ele pega 2 numeros do array, se der positivo ele joga pra tras, se der negativo ele deixa tá
+
+// lista.reduce((acc, val) => acc + val, 0);
+//acc é onde ele guarda e vai somando cada valor da lista que o val pega e joga pra ele
+
+
+function adicionarTarefa() {
+    let input = document.getElementById('tarefa');
+    let tarefaTexto = input.value;
+    let listaUL = document.getElementById('tarefas');
+
+    if (tarefaTexto == '') return; // Não deixa adicionar tarefa vazia
+
+    let item = document.createElement('li');
+    item.innerText = tarefaTexto + " "; 
+
+    let btnApagar = document.createElement('button');
+    btnApagar.innerText = "Apagar";
+    btnApagar.style.backgroundColor = "red";
+
+    btnApagar.onclick = function() {
+        item.remove(); // Ele sabe exatamente qual 'item' deve apagar!
+    };
+
+    item.onclick = function() {
+    item.style.textDecoration = "line-through";
+    item.style.color = "gray";
+    };
+
+    item.appendChild(btnApagar);
+    listaUL.appendChild(item);
+
+    input.value = '';
+    input.focus();
+}

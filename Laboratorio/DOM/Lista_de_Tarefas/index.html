@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarefas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="lista-de-tarefas">
+            <div class="adicionar-tarefa">
+                <h2>Lista de Tarefas</h2>
+                <input type="text" name="tarefa" id="tarefa">
+                <input type="button" value="Adicionar Tarefa" onclick="adicionarTarefa()" class="btn">
+            </div>
+            <div class="tarefas-salvas">
+                <h2>Tarefas</h2>
+                <p>Clique na Tarefa para concluir</p>
+                <p id="contador">Você tem 0 tarefas pendentes</p>
+                <ul id="tarefas">
+                </ul>
+            </div>
+        </div>
+        <script src="script.js"></script>
+</body>
+</html>
