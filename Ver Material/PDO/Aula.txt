@@ -1,0 +1,9 @@
+PDO é orientado a objetos e é necessário criar uma variável pra ele
+
+mysql: MySQL/MariaDB.
+host=localhost: O servidor onde o banco está rodando.
+dbname: O nome do banco no PHPMyAdmin.
+root, senha
+
+Exception seria um erro genérico, erro de qualquer coisa, PDOException para erros
+relacionados ao banco de dados
