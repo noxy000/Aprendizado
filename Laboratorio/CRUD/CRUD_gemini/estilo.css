@@ -1,0 +1,107 @@
+/* Reset básico para limpar as margens do navegador */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f4f7f6;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    padding: 50px;
+}
+
+/* Container principal usando Flex para dividir Esquerda e Direita */
+section {
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0px 10px 25px rgba(0,0,0,0.1);
+}
+
+#esquerda {
+    width: 30%;
+    margin-right: 20px;
+}
+
+#direita {
+    width: 65%;
+}
+
+/* Estilo do Formulário */
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    color: #666;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    outline: none;
+}
+
+input[type="submit"] {
+    width: 100%;
+    background-color: #007bff;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 20px;
+    font-size: 16px;
+    transition: background 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Estilo da Tabela */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#titulo {
+    background-color: #333;
+    color: white;
+    font-weight: bold;
+}
+
+td {
+    padding: 12px;
+    border-bottom: 1px solid #eee;
+    text-align: left;
+}
+
+/* Estilo dos Botões de Ação (Links) */
+a {
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 14px;
+    margin-right: 5px;
+    color: white;
+}
+
+a[href*="id_up"] { background-color: #28a745; } /* Verde para Editar */
+a[href*="id="] { background-color: #dc3545; }   /* Vermelho para Excluir */
+
+a:hover { opacity: 0.8; }
